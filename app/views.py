@@ -2,8 +2,6 @@ from flask import render_template, request
 from app import app 
 import string
 
-#from function import *
-
 
 def encryptWithParams(message, key):
     alphabet = string.ascii_lowercase # "abcdefghijklmnopqrstuvwxyz"
