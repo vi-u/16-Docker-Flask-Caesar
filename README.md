@@ -8,11 +8,11 @@ This tool now built in Docker which can be depolyed in a variety of cloud based 
 
 >>> First, let's add input form to get text and step and output form to show encrypted message.
 
-    sudo nano /app/templates/input.html
+    sudo nano app/templates/form.html
 
 #which contains
 
-    <form action="/output" method = "POST">
+    <form action="/data" method = "POST">
        <p>Please enter Phrase to Encript: <input type = "text" name = "Phrase" /></p>
        <p>Please choose your Step: <input type = "text" name = "Step" /></p>
    
@@ -21,7 +21,7 @@ This tool now built in Docker which can be depolyed in a variety of cloud based 
 
 #and output.html
 
-    sudo nano /app/templates/output.html
+    sudo nano app/templates/data.html
 
 #which contains
 
@@ -29,5 +29,12 @@ This tool now built in Docker which can be depolyed in a variety of cloud based 
     <p> Encoded message:  </p> <h2> {{result}} </h2>
     <p> ... </p>
 
-#
+#we need to change code in our views.py file to make our tool work
+
+    sudo nano app/views.py
+    
+ #which should look like this
+ 
+ 
+#Finally 
 
