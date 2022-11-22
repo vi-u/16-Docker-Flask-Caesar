@@ -30,18 +30,9 @@
 
     sudo nano app/views.py
 
-#which contains
+#which contains this code
 
-    from flask import render_template
-    from app import app 
-
-    @app.route('/')
-    def home():
-        return "Hello world!"
-
-    @app.route('/template')
-    def template():
-        return render_template('home.html')
+https://github.com/vi-u/16-Docker-Flask-Caesar/blob/main/app/views.py
         
 #As we created a new project in our local directory and named it 
 
